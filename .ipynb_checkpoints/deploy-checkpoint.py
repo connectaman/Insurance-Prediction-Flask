@@ -36,7 +36,7 @@ def predicts():
         predicted_result = model.predict(x_inp)
         predicted_result = predicted_result * -1
         final_pred = predicted_result[0]
-        result_string = 'The Insurance for the Data is '+final_pred
+        result_string = 'The Insurance for the Data is '+str(final_pred)
         #Return the Prediction
         return render_template('index.html',data = result_string)
 
