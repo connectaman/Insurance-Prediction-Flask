@@ -40,4 +40,7 @@ def predicts():
         #Return the Prediction
         return render_template('index.html',data = result_string)
 
-app.run()
+
+if __name__ == '__main__':
+    app.run()
+
