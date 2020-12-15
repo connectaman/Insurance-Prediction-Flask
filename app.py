@@ -28,7 +28,7 @@ def predicts():
         smoker = request.form.get('smoker',type=int)
         region = request.form.get('region',type=int)
         # Loading the model
-        model = joblib.load('/Users/amanulla/Documents/mindtree/Insurance_LR_ANN/save_model/insaurance_LR.sav')
+        model = joblib.load('save_model/insaurance_LR.pkl')
         # Organizing the data
         x_inp = np.array([[age,bmi,children,male,smoker,region]])
         print(x_inp)
